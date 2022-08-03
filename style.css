@@ -1,18 +1,39 @@
-
 body {
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
 }
 
+/* header */
 header{
     background-color: green;
-    border-bottom: 10px;
-    border-color: darkgreen;
-    border-style: solid;
+    display: flex;
+    justify-content: space-between;
 }
 
 h1{
-    text-align: center;
+    margin-left: 20px;
 }
 
+nav{
+    padding-top: 40px;
+}
+
+nav a{
+    margin-right: 20px;
+}
+
+/* Main */
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+}
+
+h2{
+    border: 1px solid green;
+    padding: 10px;
+}
