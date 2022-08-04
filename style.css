@@ -16,12 +16,17 @@ body {
 /* header */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--green);
     color: white;
     padding: 10px;
     margin-bottom: 30px;
+}
+
+header img{
+    height: 65px;
+    width: 50px;
 }
 
 h1 {
@@ -80,32 +85,72 @@ p {
 }
 
 /* Project Images */
-#projects div {
+.img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
 }
 
+.img div{
+    border: 5px solid var(--green);
+    padding: 0px;
+    object-fit: fill;
+    margin: 0;
+    position: relative;
+    display: inline;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img div p{
+    position: absolute;
+    left: 25%;
+    font-size: 150%;
+    color: white;
+    background: var(--green);
+}
+
+.img div:hover{
+    border-color: green;
+}
+
 .larger {
-    border-style: solid;
-    border-width: 10px;
-    padding: 10px;
-    flex: 0 0 400px;
+    width: 100%;
+    height: 50%;
 }
 
 .smaller {
-    border-style: solid;
-    border-width: 10px;
-    padding: 10px;
-    flex: 0 0 400px;
+    width: 25%;
+    height: 20%;
 }
 
 img{
     width: 100%;
+    height: 100%;
 }
 
 /* Contact */
+.contact {
+    height: 20%;
+}
+
+
+ul{
+    display: flex;
+    align-items: center;
+    width: 100%; 
+}
+
+li{
+    font-weight: bolder;
+    padding-left: 5%;
+    color: rgb(50, 50, 50);
+}
+
+li:hover{
+    color: black;
+}
 
 /* footer */
 footer {
